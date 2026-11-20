@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário sobre Inteligência Artificial</title>
+</head>
+<body bgcolor="F5F5F5">
+    <b><h1><center>🤖 Formulário sobre Inteligência Artificial</center></h1></b><br>
+    <center><img src="robot.png"></center>
+    <p><h4><center>Responda ás perguntas abaixo sobre o uso da Inteligência Artificial.</h4></p></center>
+    <p><strong>Demonstração escolar:</strong> este formulário não envia nem salva respostas. Não informe dados pessoais.</p>
+    <form onsubmit="event.preventDefault(); alert('Demonstração: os dados não foram enviados nem salvos.');">
+        <hr>
+        
+        <b>👤 Informações do Participante</b><br>
+
+        <label for="nome" >Nome:</label><br>
+        <input type="text" name="nome" required placeholder="Digite seu nome"><br /><br />
+
+        <label for="idadePessoa">Idade:</label><br>
+        <input type="number" name="idadePessoa" min="1" max="999" required /><br /><br />
+
+        <label for="nome">Curso/Turma:</label><br>
+        <input type="text" name="curso" required placeholder="Ex: Desenvolvimento de Sistemas 3º ano"><br /><br>
+
+        <hr><br><br>
+
+        <b>🧠 Conhecimento sobre IA</b><br><br>
+
+        <img src="ai-tools.png" widht="200"><br><br>
+
+        <br /><large>Você já utilizou Inteligência Artificial?</large><br />
+        <input type="radio" id="sim" name="opt" value="S" />
+        <label for="sim">Sim</label>
+        <input type="radio" id="nao" name="opt" value="N" />
+        <label for="nao">Não</label><br/><br/>
+
+        <br /><small>Quais dessas IAs você conhece:</small><br />
+        <input type="checkbox" id="claude" name="area" value="claude" />
+        <label for="claude">Claude</label><br>
+        <input type="checkbox" id="gemini" name="area" value="gemini" />
+        <label for="gemini">Gemini</label><br>
+        <input type="checkbox" id="deepseek" name="area" value="deepseek" />
+        <label for="deepseek">Deepseek</label><br>
+        <input type="checkbox" id="manus" name="area" value="manus" />
+        <label for="manus">Manus</label><br>
+        <input type="checkbox" id="blackbox" name="area" value="blackbox" />
+        <label for="blackbox">Blackbox</label><br>
+        <input type="checkbox" id="outra" name="area" value="outra" />
+        <label for="outra">Outra</label><br>
+        <br />
+
+        <label for="editor">Qual ferramenta você mais ultiliza?</label><br>
+        <select name="editor" id="editor">
+            <option value="selecione">Selecione</option>
+            <option value="vscode">Claude</option>
+            <option value="replit">Gemini</option>
+            <option value="codepen">Deepseek</option>
+            <option value="outro">Outra</option>
+        </select><br><br>
+
+        <hr><br><br>
+
+        <b>💻Uso da Inteligência Artificial</b><br><br>
+
+        <img src="learning.png"><br><br>
+
+        <label for="Paraque">Para que você utiliza IA?</label>
+        <br />
+        <textarea name="resumo" rows="10" cols="30" maxlength="200" placeholder="Ex: estudar, criar imagens, programar..."></textarea>
+        <br />
+
+        <label for="volume">Quanto você entende sobre IA? (0 a 10)</label>
+            <br/><input type="range" name="volume" id="volume" min="0" max="10" list="selecao" /><br /><br />
+
+                <p>Escolha uma cor que represente tecnologia</p>
+        <input type="color" name="cor" /><br /><br>
+
+        <hr><br><br>
+
+        <b>📷 Envio de Arquivo</b><br><br>
+
+        <img src="upload-icon.png" width="100"><br><br>
+
+        <p>Quer enviar uma imagem relacionada á IA:</p>
+
+        <label for="Arquivos">Arquivos</label><br />
+        <input type="file" name="arquivos" />
+        <br /><br>
+        
+        <hr><b></b>
+
+        <b>📝Opnião Final</b><br>
+
+        <label for="Paraque">Na sua opnião, a IA ajudará ou prejudicará o futuro?</label>
+        <br />
+        <textarea name="resumo" rows="10" cols="30" maxlength="200" placeholder="Digite sua opnião..."></textarea>
+        <br />
+
+        <center><button type="submit"> ✅ Enviar Atividade </button><button type="reset"> 🗑️ Limpar Campos </button></center>
+    </form>
+    
+</body>
+</html>
